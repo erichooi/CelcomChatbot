@@ -1,0 +1,1090 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.celcom.com.my/ontology#"
+     xml:base="http://www.celcom.com.my/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:verb="http://www.celcom.com.my/verb#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology="http://www.celcom.com.my/ontology#">
+    <owl:Ontology rdf:about="http://www.celcom.com.my/ontology">
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <rdfs:comment>stop until kawkawsquad</rdfs:comment>
+        <rdfs:comment>The ontology for celcom plan</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#hasAddOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.celcom.com.my/ontology#hasAddOn">
+        <rdfs:label>has add-on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#hasInternetPlan -->
+
+    <owl:ObjectProperty rdf:about="http://www.celcom.com.my/ontology#hasInternetPlan">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#prepaidHas"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has internet plan</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#hasPlan -->
+
+    <owl:ObjectProperty rdf:about="http://www.celcom.com.my/ontology#hasPlan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has plan</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#hasPlanRate -->
+
+    <owl:ObjectProperty rdf:about="http://www.celcom.com.my/ontology#hasPlanRate">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#prepaidHas"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has plan rate</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#hasReloadPlan -->
+
+    <owl:ObjectProperty rdf:about="http://www.celcom.com.my/ontology#hasReloadPlan">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#prepaidHas"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has reload plan</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#hasStarterPack -->
+
+    <owl:ObjectProperty rdf:about="http://www.celcom.com.my/ontology#hasStarterPack">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#prepaidHas"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has starter pack</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#hasUSSD -->
+
+    <owl:ObjectProperty rdf:about="http://www.celcom.com.my/ontology#hasUSSD">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#prepaidHas"/>
+        <rdfs:label>has USSD</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#prepaidHas -->
+
+    <owl:ObjectProperty rdf:about="http://www.celcom.com.my/ontology#prepaidHas">
+        <rdfs:domain rdf:resource="http://www.celcom.com.my/ontology#prepaid"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prepaid has</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#registerWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.celcom.com.my/ontology#registerWith">
+        <rdfs:label>register with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#activationBonus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#activationBonus">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">activation bonus</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#autoRenewal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#autoRenewal">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">auto-renewal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#basicInternet -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#basicInternet">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#rate"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#cAddOnInternetQuotaInfo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#cAddOnInternetQuotaInfo">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#dial"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#cInternetQuotaInfo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#cInternetQuotaInfo">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#dial"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#cRemainingBonus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#cRemainingBonus">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#dial"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">check the remaining bonus in the prepaid</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#credit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#credit">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">credit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#dial -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#dial">
+        <rdfs:domain rdf:resource="http://www.celcom.com.my/ontology#prepaid"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">the act can be done with dialing</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#eligibility -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#eligibility">
+        <rdfs:comment>the condition to meet for some package</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#facebook -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#facebook">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#rate"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Facebook</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#facebookWallaQuota -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#facebookWallaQuota">
+        <rdfs:label>facebook walla quota</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#freeYonderMusic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#freeYonderMusic">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">free Yonder Music</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#instagramQuota -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#instagramQuota">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">instagram quota</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#instagramWallaQuota -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#instagramWallaQuota">
+        <rdfs:label>instagram walla quota</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#internetQuota -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#internetQuota">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">internet quota</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#maxReloadAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#maxReloadAmount">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maximum reload amount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#minReloadAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#minReloadAmount">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">minimum reload amount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#mms -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#mms">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#rate"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MMS</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#musicWallaQuota -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#musicWallaQuota">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">music walla quota</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#partner -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#partner">
+        <rdfs:comment>link to go when customer want to know about the partner of walla</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#price"/>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#promotionPeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#promotionPeriod">
+        <rdfs:comment>the promotion period for some package</rdfs:comment>
+        <rdfs:label>promotion period</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#rate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#rate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#sAutoRenewal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#sAutoRenewal">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#dial"/>
+        <rdfs:comment>stop the auto renewal of weekly and monthly subscription</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#sms -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#sms">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#rate"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SMS</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#subscribe -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#subscribe">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#dial"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#validityPeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#validityPeriod">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">validity period</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#videoCall -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#videoCall">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#rate"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">video call</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#videoWallaQuota -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#videoWallaQuota">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">video walla quota</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#voiceCall -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#voiceCall">
+        <rdfs:subPropertyOf rdf:resource="http://www.celcom.com.my/ontology#rate"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#voiceCallQuota -->
+
+    <owl:DatatypeProperty rdf:about="http://www.celcom.com.my/ontology#voiceCallQuota">
+        <rdfs:label>voice call quota</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#customer -->
+
+    <owl:Class rdf:about="http://www.celcom.com.my/ontology#customer"/>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#identificationObject -->
+
+    <owl:Class rdf:about="http://www.celcom.com.my/ontology#identificationObject">
+        <rdfs:subClassOf rdf:resource="http://www.celcom.com.my/ontology#customer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#plan -->
+
+    <owl:Class rdf:about="http://www.celcom.com.my/ontology#plan"/>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#postpaid -->
+
+    <owl:Class rdf:about="http://www.celcom.com.my/ontology#postpaid">
+        <rdfs:subClassOf rdf:resource="http://www.celcom.com.my/ontology#plan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#prepaid -->
+
+    <owl:Class rdf:about="http://www.celcom.com.my/ontology#prepaid">
+        <rdfs:subClassOf rdf:resource="http://www.celcom.com.my/ontology#plan"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#addOn -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#addOn">
+        <hasAddOn rdf:resource="http://www.celcom.com.my/ontology#basicInternetAddOn"/>
+        <hasAddOn rdf:resource="http://www.celcom.com.my/ontology#facebookWalla"/>
+        <hasAddOn rdf:resource="http://www.celcom.com.my/ontology#instagramWalla"/>
+        <hasAddOn rdf:resource="http://www.celcom.com.my/ontology#lateNightInternet"/>
+        <hasAddOn rdf:resource="http://www.celcom.com.my/ontology#musicWalla"/>
+        <hasAddOn rdf:resource="http://www.celcom.com.my/ontology#videoWalla"/>
+        <hasAddOn rdf:resource="http://www.celcom.com.my/ontology#voiceCallAddOn"/>
+        <rdfs:label>Add-on</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#basicInternetAddOn -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#basicInternetAddOn">
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#dailyBasicInternetAddOn"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#monthlyBasicInternetAddOn"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#weeklyBasicInternetAddOn"/>
+        <sAutoRenewal>*118*3*6*4(number_sign)</sAutoRenewal>
+        <rdfs:label>Basic Internet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#dailyBasicInternetAddOn -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#dailyBasicInternetAddOn">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</autoRenewal>
+        <internetQuota>UNLIMITED</internetQuota>
+        <price>RM 1</price>
+        <subscribe>*118*3*6*1(number_sign)</subscribe>
+        <validityPeriod>24 hours</validityPeriod>
+        <rdfs:label>Daily Basic Internet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#dailyFacebookWalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#dailyFacebookWalla">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</autoRenewal>
+        <facebookWallaQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 GB</facebookWallaQuota>
+        <price>RM 1</price>
+        <subscribe rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*118*3*4*1(number_sign)</subscribe>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24 hours</validityPeriod>
+        <rdfs:label>Daily Facebook Walla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#dailyInstagramWalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#dailyInstagramWalla">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</autoRenewal>
+        <instagramWallaQuota>1 GB</instagramWallaQuota>
+        <price>RM 1</price>
+        <subscribe>*118*3*8*1(number_sign)</subscribe>
+        <validityPeriod>24 hours</validityPeriod>
+        <rdfs:label>Daily Instagram Walla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#dailyInternetPlan -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#dailyInternetPlan">
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#dailyInternetPlan3"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#dailyInternetPlan5"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daily Internet Plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#dailyInternetPlan3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#dailyInternetPlan3">
+        <freeYonderMusic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeYonderMusic>
+        <instagramQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 GB</instagramQuota>
+        <internetQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 GB</internetQuota>
+        <price>RM 3</price>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 day</validityPeriod>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daily Internet Plan RM 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#dailyInternetPlan5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#dailyInternetPlan5">
+        <freeYonderMusic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeYonderMusic>
+        <instagramQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 GB</instagramQuota>
+        <internetQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 GB</internetQuota>
+        <price>RM 5</price>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 day</validityPeriod>
+        <rdfs:label>Daily Internet Plan RM 5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#dailyLateNightInternet -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#dailyLateNightInternet">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</autoRenewal>
+        <internetQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 GB</internetQuota>
+        <price>RM 1</price>
+        <subscribe rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*118*3*3*1(number_sign)</subscribe>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24 hours</validityPeriod>
+        <rdfs:label>Daily Late Night Internet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#dailyVideoWalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#dailyVideoWalla">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</autoRenewal>
+        <price>RM 1</price>
+        <subscribe rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*118*3*5*1(number_sign)</subscribe>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24 hours</validityPeriod>
+        <videoWallaQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 GB</videoWallaQuota>
+        <rdfs:label>Daily Video Walla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#dailyVoiceCallAddOn -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#dailyVoiceCallAddOn">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</autoRenewal>
+        <price>RM 1</price>
+        <subscribe>*118*3*1*1(number_sign)</subscribe>
+        <validityPeriod>24 hours</validityPeriod>
+        <voiceCallQuota>UNLIMITED call to Celcom Network</voiceCallQuota>
+        <rdfs:label>Daily Voice Call</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#facebookWalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#facebookWalla">
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#dailyFacebookWalla"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#monthlyFacebookWalla"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#weeklyFacebookWalla"/>
+        <partner>https://www.celcom.com.my/personal/prepaid/plans/internet-plans/walla</partner>
+        <sAutoRenewal>*118*3*4*4(number_sign)</sAutoRenewal>
+        <rdfs:label>Facebook Walla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#instagramWalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#instagramWalla">
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#dailyInstagramWalla"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#monthlyInstagramWalla"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#weeklyInstagramWalla"/>
+        <partner>https://www.celcom.com.my/personal/prepaid/plans/internet-plans/walla</partner>
+        <sAutoRenewal>*118*3*8*4(number_sign)</sAutoRenewal>
+        <rdfs:label>Instagram Walla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#internetPlan -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#internetPlan">
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#dailyInternetPlan"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#monthlyInternetPlan"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#weeklyInternetPlan"/>
+        <subscribe>*118(number_sign) and follow the instructions</subscribe>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internet Plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#kawKawSquad -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#kawKawSquad">
+        <eligibility>age 12-25 (birth year 1992-2005)</eligibility>
+        <promotionPeriod>17th April 2017 - 17th April 2018</promotionPeriod>
+        <rdfs:label>KawKawSquad</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#lateNightInternet -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#lateNightInternet">
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#dailyLateNightInternet"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#monthlyLateNightInternet"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#weeklyLateNightInternet"/>
+        <sAutoRenewal>*118*3*3*4(number_sign)</sAutoRenewal>
+        <rdfs:comment>available only from 1am to 7am</rdfs:comment>
+        <rdfs:label>Late Night Internet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#monthMusicWalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#monthMusicWalla">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <musicWallaQuota>UNLIMITED</musicWallaQuota>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</price>
+        <subscribe>*118*3*7*2(number_sign)</subscribe>
+        <validityPeriod>30 days</validityPeriod>
+        <rdfs:label>Monthly Music Walla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#monthlyBasicInternetAddOn -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#monthlyBasicInternetAddOn">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <internetQuota>UNLIMITED</internetQuota>
+        <price>RM 20</price>
+        <subscribe>*118*3*6*3(number_sign)</subscribe>
+        <validityPeriod>30 days</validityPeriod>
+        <rdfs:label>Monthly Basic Internet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#monthlyFacebookWalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#monthlyFacebookWalla">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <facebookWallaQuota>15 GB</facebookWallaQuota>
+        <price>RM 20</price>
+        <subscribe>*118*3*4*3(number_sign)</subscribe>
+        <validityPeriod>30 days</validityPeriod>
+        <rdfs:label>Monthly Facebook Walla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#monthlyInstagramWalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#monthlyInstagramWalla">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <instagramWallaQuota>15 GB</instagramWallaQuota>
+        <price>RM 20</price>
+        <subscribe>*118*3*8*3(number_sign)</subscribe>
+        <validityPeriod>30 days</validityPeriod>
+        <rdfs:label>Monthly Instagram Walla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#monthlyInternetPlan -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#monthlyInternetPlan">
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#monthlyInternetPlan30"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#monthlyInternetPlan50"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#monthlyInternetPlan79"/>
+        <rdfs:label>Monthly Internet Plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#monthlyInternetPlan30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#monthlyInternetPlan30">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <freeYonderMusic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeYonderMusic>
+        <instagramQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 GB</instagramQuota>
+        <internetQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5 GB</internetQuota>
+        <price>RM 30</price>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30 days</validityPeriod>
+        <rdfs:label>Monthly Internet Plan 30</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#monthlyInternetPlan50 -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#monthlyInternetPlan50">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <freeYonderMusic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeYonderMusic>
+        <instagramQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 GB</instagramQuota>
+        <internetQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 GB</internetQuota>
+        <musicWallaQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNLIMITED</musicWallaQuota>
+        <price>RM 50</price>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30 days</validityPeriod>
+        <rdfs:label>Monthly Internet Plan RM 50</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#monthlyInternetPlan79 -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#monthlyInternetPlan79">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <freeYonderMusic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeYonderMusic>
+        <instagramQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 GB</instagramQuota>
+        <internetQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 GB</internetQuota>
+        <musicWallaQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNLIMITED</musicWallaQuota>
+        <price>RM 79</price>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30 days</validityPeriod>
+        <videoWallaQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 GB</videoWallaQuota>
+        <rdfs:label>Monthly Internet Plan RM 79</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#monthlyLateNightInternet -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#monthlyLateNightInternet">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <internetQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 GB</internetQuota>
+        <price>RM 20</price>
+        <subscribe rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*118*3*3*3(number_sign)</subscribe>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30 days</validityPeriod>
+        <rdfs:label>Monthly Late Night Internet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#monthlyVideoWalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#monthlyVideoWalla">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <price>RM 20</price>
+        <subscribe rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*118*3*5*3(number_sign)</subscribe>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30 days</validityPeriod>
+        <videoWallaQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 GB</videoWallaQuota>
+        <rdfs:label>Monthly Video Walla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#musicWalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#musicWalla">
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#monthMusicWalla"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#weeklyMusicWalla"/>
+        <partner>https://www.celcom.com.my/personal/prepaid/plans/internet-plans/walla</partner>
+        <rdfs:label>Music Walla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#nric -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#nric">
+        <rdf:type rdf:resource="http://www.celcom.com.my/ontology#identificationObject"/>
+        <rdfs:label>National Registration Identification Card</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#passport -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#passport">
+        <rdf:type rdf:resource="http://www.celcom.com.my/ontology#identificationObject"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Passport</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#planRate -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#planRate">
+        <basicInternet rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 GB/month Speed at 64kbps</basicInternet>
+        <facebook rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 GB/month</facebook>
+        <mms rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50 sen/MMS</mms>
+        <sms rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 sen/SMS</sms>
+        <videoCall rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60 secs/Block</videoCall>
+        <voiceCall rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30 sen/min</voiceCall>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plan Rate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#reloadPlan -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#reloadPlan">
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#reloadPlan10"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#reloadPlan100"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#reloadPlan30"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#reloadPlan5"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#reloadPlan50"/>
+        <maxReloadAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RM 200</maxReloadAmount>
+        <minReloadAmount rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RM 5</minReloadAmount>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reload Plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#reloadPlan10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#reloadPlan10">
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RM 10</credit>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 days</validityPeriod>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RM 10 reload plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#reloadPlan100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#reloadPlan100">
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RM 100</credit>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100 days</validityPeriod>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RM 100 reload plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#reloadPlan30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#reloadPlan30">
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RM 30</credit>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30 days</validityPeriod>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RM 30 reload plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#reloadPlan5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#reloadPlan5">
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RM 5</credit>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5 days</validityPeriod>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RM 5 reload plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#reloadPlan50 -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#reloadPlan50">
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RM 50</credit>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50 days</validityPeriod>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RM 50 reload plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#starterPack10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#starterPack10">
+        <activationBonus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">200 MB</activationBonus>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RM 6</credit>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 days</validityPeriod>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RM 10 starter pack</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#videoWalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#videoWalla">
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#dailyVideoWalla"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#monthlyVideoWalla"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#weeklyVideoWalla"/>
+        <partner>https://www.celcom.com.my/personal/prepaid/plans/internet-plans/walla</partner>
+        <sAutoRenewal>*118*3*5*4(number_sign)</sAutoRenewal>
+        <rdfs:label>Video Walla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#voiceCallAddOn -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#voiceCallAddOn">
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#dailyVoiceCallAddOn"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#weeklyVoiceCallAddOn"/>
+        <sAutoRenewal>*118*3*1*3(number_sign)</sAutoRenewal>
+        <rdfs:label>Voice Call</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#weeklyBasicInternetAddOn -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#weeklyBasicInternetAddOn">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <internetQuota>UNLIMITED</internetQuota>
+        <price>RM 7</price>
+        <subscribe>*118*3*6*2(number_sign)</subscribe>
+        <validityPeriod>7 days</validityPeriod>
+        <rdfs:label>Weekly Basic Internet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#weeklyFacebookWalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#weeklyFacebookWalla">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <facebookWallaQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 GB</facebookWallaQuota>
+        <facebookWallaQuota>7 days</facebookWallaQuota>
+        <price>RM 7</price>
+        <subscribe>*118*3*4*2(number_sign)</subscribe>
+        <rdfs:label>Weekly Facebook Walla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#weeklyInstagramWalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#weeklyInstagramWalla">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <instagramWallaQuota>10 GB</instagramWallaQuota>
+        <price>RM 7</price>
+        <subscribe>*118*3*8*2(number_sign)</subscribe>
+        <validityPeriod>7 days</validityPeriod>
+        <rdfs:label>Weekly Instagram Walla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#weeklyInternetPlan -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#weeklyInternetPlan">
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#weeklyInternetPlan10"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#weeklyInternetPlan19"/>
+        <hasPlan rdf:resource="http://www.celcom.com.my/ontology#weeklyInternetPlan6"/>
+        <rdfs:label>Weekly Internet Plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#weeklyInternetPlan10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#weeklyInternetPlan10">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <freeYonderMusic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeYonderMusic>
+        <instagramQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 GB</instagramQuota>
+        <internetQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 GB</internetQuota>
+        <price>RM 10</price>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 days</validityPeriod>
+        <rdfs:label>Weekly Internet Plan RM 10</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#weeklyInternetPlan19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#weeklyInternetPlan19">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <freeYonderMusic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeYonderMusic>
+        <instagramQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 GB</instagramQuota>
+        <internetQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5 GB</internetQuota>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">RM 19</price>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 days</validityPeriod>
+        <rdfs:label>Weekly Internet Plan RM 19</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#weeklyInternetPlan6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#weeklyInternetPlan6">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <freeYonderMusic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</freeYonderMusic>
+        <instagramQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 GB</instagramQuota>
+        <internetQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">500 MB</internetQuota>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">RM 6</price>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 days</validityPeriod>
+        <rdfs:label>Weekly Internet Plan RM 6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#weeklyLateNightInternet -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#weeklyLateNightInternet">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</autoRenewal>
+        <instagramQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 GB</instagramQuota>
+        <price>RM 7</price>
+        <subscribe rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*118*3*3*2(number_sign)</subscribe>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 days</validityPeriod>
+        <rdfs:label>Weekly Late Night Internet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#weeklyMusicWalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#weeklyMusicWalla">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <musicWallaQuota>UNLIMITED</musicWallaQuota>
+        <price>RM 1</price>
+        <subscribe>*118*3*7*1(number_sign)</subscribe>
+        <validityPeriod>7 days</validityPeriod>
+        <rdfs:label>Weekly Music Walla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#weeklyVideoWalla -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#weeklyVideoWalla">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <price>RM 7</price>
+        <subscribe rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*118*3*5*2(number_sign)</subscribe>
+        <validityPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7 days</validityPeriod>
+        <videoWallaQuota rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10 GB</videoWallaQuota>
+        <rdfs:label>Weekly Video Walla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#weeklyVoiceCallAddOn -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#weeklyVoiceCallAddOn">
+        <autoRenewal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</autoRenewal>
+        <price>RM 7</price>
+        <subscribe>*118*3*1*2(number_sign)</subscribe>
+        <validityPeriod>7 days</validityPeriod>
+        <voiceCallQuota>UNLIMITED call to Celcom Network</voiceCallQuota>
+        <rdfs:label>Weekly Voice Call</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#xpax -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#xpax">
+        <rdf:type rdf:resource="http://www.celcom.com.my/ontology#prepaid"/>
+        <hasAddOn rdf:resource="http://www.celcom.com.my/ontology#addOn"/>
+        <hasInternetPlan rdf:resource="http://www.celcom.com.my/ontology#internetPlan"/>
+        <hasPlanRate rdf:resource="http://www.celcom.com.my/ontology#planRate"/>
+        <hasReloadPlan rdf:resource="http://www.celcom.com.my/ontology#reloadPlan"/>
+        <hasStarterPack rdf:resource="http://www.celcom.com.my/ontology#starterPack10"/>
+        <hasUSSD rdf:resource="http://www.celcom.com.my/ontology#xpaxDirectDialUSSD"/>
+        <registerWith rdf:resource="http://www.celcom.com.my/ontology#nric"/>
+        <registerWith rdf:resource="http://www.celcom.com.my/ontology#passport"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xpax</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.celcom.com.my/ontology#xpaxDirectDialUSSD -->
+
+    <owl:NamedIndividual rdf:about="http://www.celcom.com.my/ontology#xpaxDirectDialUSSD">
+        <cAddOnInternetQuotaInfo>*118*1*1*3(number_sign)</cAddOnInternetQuotaInfo>
+        <cInternetQuotaInfo>*118*1*1*2(number_sign)</cInternetQuotaInfo>
+        <cRemainingBonus>*118*1*1*4(number_sign)</cRemainingBonus>
+        <sAutoRenewal>*118*2*9*1(number_sign)</sAutoRenewal>
+        <rdfs:label>Xpax Direct Dial USSD</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <credit>10 GB</credit>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

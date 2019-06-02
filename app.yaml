@@ -1,0 +1,23 @@
+runtime: python
+api_version: 1
+env: flex
+entrypoint: gunicorn -b :$PORT main:app
+
+#env_variables:
+#    CLOUDSQL_CONNECTION_NAME: 'tabot-195902:asia-south1:celcom-chatbot'
+#    CLOUDSQL_USER: 'root'
+#    CLOUDSQL_PASSWORD: ''
+
+runtime_config:
+    python_version: 3
+
+manual_scaling:
+    instances: 1
+resources:
+    cpu: 1
+    memory_gb: 0.5
+    disk_size_gb: 10
+
+handlers:
+- url: /.*
+  script: main.app

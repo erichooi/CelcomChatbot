@@ -1,0 +1,23 @@
+
+Classifier
+------------
+('vectorizer', TfidfVectorizer(analyzer='word', binary=False, decode_error='strict',
+        dtype=<class 'numpy.int64'>, encoding='utf-8', input='content',
+        lowercase=True, max_df=1.0, max_features=None, min_df=1,
+        ngram_range=(1, 1), norm='l2', preprocessor=None, smooth_idf=True,
+        stop_words=['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', "you're", "you've", "you'll", "you'd", 'your', 'yours', 'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', "she's", 'her', 'hers', 'herself', 'it', "it's", 'its', 'itself', 'they', 'them', 'their', 'theirs',... 'shouldn', "shouldn't", 'wasn', "wasn't", 'weren', "weren't", 'won', "won't", 'wouldn', "wouldn't"],
+        strip_accents=None, sublinear_tf=False,
+        token_pattern='(?u)\\b\\w\\w+\\b', tokenizer=None, use_idf=True,
+        vocabulary=None))
+('classifier', MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True))
+
+Report
+------------
+             precision    recall  f1-score   support
+
+    prepaid       0.99      0.66      0.79       235
+   postpaid       0.30      0.97      0.46        36
+
+avg / total       0.90      0.70      0.75       271
+
+--------------------------------------------------------------------------------------

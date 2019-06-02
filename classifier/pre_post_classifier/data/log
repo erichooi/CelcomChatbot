@@ -1,0 +1,13 @@
+Information
+----------------------------------
+File: train.jsonl
+prepaid number: 200
+postpaid number: 200
+
+File: test.jsonl
+prepaid number: 50
+postpaid number: 50
+
+File: devTest.jsonl
+prepaid number: 36
+postpaid number: 235
