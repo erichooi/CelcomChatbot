@@ -10,7 +10,7 @@ Flask==0.12.2
 greenlet==0.4.12
 gunicorn==19.7.1
 html2text==2018.1.9
-html5lib==0.9999999
+html5lib==0.999999999
 idna==2.6
 isodate==0.6.0
 itsdangerous==0.24
